@@ -1,0 +1,73 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Shopping Cart || Edit Product page</title>
+    <!-- css -->
+    <link rel="stylesheet" href="css/createproduct.css">
+    <link rel="stylesheet" href="css/style.css">
+    <!-- font awesome -->
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.6.0/css/all.min.css" integrity="sha512-Kc323vGBEqzTmouAECnVceyQqyqdsSiqLQISBL29aUW4U/M7pSPA/gEUZQqv1cwx4OnYxTxve5UMg5GT6L4JJg==" crossorigin="anonymous" referrerpolicy="no-referrer" />
+   <!-- fonts -->
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Oswald:wght@200..700&display=swap" rel="stylesheet">
+</head>
+<body>
+    <header>
+        <div class="container">
+            <div class="header-content">
+                <a class="brand" href="index.html">Kick Store</a>
+
+                <nav>
+                    <ul id="links">
+                       <li><a href="login.html">Sign in</a></li>
+                       <li><a href="register.html">Sign up</a></li>
+                    </ul>
+                    <ul id="user_info">
+                        <li><a href="#" id="user"></a></li>
+                        <li><a href="./fevorits.html" ><i class="fa-solid fa-heart" style="color: #b30000;"></i></a></li>
+                        <li class="shopping-cart"">
+                            <i class="fas fa-shopping-cart"></i>
+                            <span class="badge"></span>
+
+                            <div class="carts-products">
+                                <div></div>
+                                <a href="cartproducts.html">view all products</a>
+                            </div>
+                        </li>
+                        <li><a href="#" id="logOut">LogOut</a></li>
+                    </ul>
+                </nav>
+            </div>
+        </div>
+    </header>
+
+    <section class="create-product-page">
+      <div class="container">
+        <form id="update-form">
+            <input type="file" id="upload-image-file"/>
+            <input type="text" placeholder="Enter Product Name" id="product-name"/>
+            <input type="text" placeholder="Description" id="product-desc"/>
+    
+            <select name="" id="product-size">
+                <option value="" hidden>Select Size</option>
+                <option value="40">40</option>
+                <option value="41">41</option>
+                <option value="42">42</option>
+                <option value="43">43</option>
+                <option value="44">44</option>
+                <option value="45">45</option>
+            </select>
+            <input type="number" placeholder="Enter Price" id="product-price"/>
+            <input type="submit" value="Updata" />
+           </form>
+      </div>
+    </section>
+    <script src="./js/user.js"></script>
+    <script src="./js/data.js"></script>
+    <script src="./js/editProduct.js"></script>
+    
+</body>
+</html>

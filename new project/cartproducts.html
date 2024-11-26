@@ -1,0 +1,56 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Shopping Cart || Cart page</title>
+    <!-- css -->
+    <link rel="stylesheet" href="css/style.css">
+    <link rel="stylesheet" href="css/login.css">
+    <!-- bootstarb -->
+       <!-- font awesome -->
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.6.0/css/all.min.css" integrity="sha512-Kc323vGBEqzTmouAECnVceyQqyqdsSiqLQISBL29aUW4U/M7pSPA/gEUZQqv1cwx4OnYxTxve5UMg5GT6L4JJg==" crossorigin="anonymous" referrerpolicy="no-referrer" />
+    <!-- fonts -->
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Oswald:wght@200..700&display=swap" rel="stylesheet">
+</head>
+<body>
+    <header>
+        <div class="container">
+            <div class="header-content">
+                <a class="brand" href="index.html">Shopping Cart</a>
+
+                <nav>
+                    <ul id="links">
+                       <li><a href="login.html">Sign in</a></li>
+                       <li><a href="register.html">Sign up</a></li>
+                    </ul>
+                    <ul id="user_info">
+                        <li><a href="#" id="user"></a></li>
+                        <li class="shopping-cart"">
+                            <i class="fas fa-shopping-cart"></i>
+                            <span class="badge"></span>
+
+                            <div class="carts-products">
+                                <div></div>
+                                <a href="cartproducts.html">view all products</a>
+                            </div>
+                        </li>
+                        <li><a href="#" id="logOut">LogOut</a></li>
+                    </ul>
+                </nav>
+            </div>
+        </div>
+    </header>
+
+    <section class="home">
+        <div class="container">
+            <div class="product"></div>
+            <div class="noProducts"></div>
+        </div>
+    </section>
+    <script src="./js/user.js"></script>
+    <script src="./js/carts.js"></script>
+</body>
+</html>
